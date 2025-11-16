@@ -1,0 +1,65 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* -------- Layout mặc định (Desktop) -------- */
+#map {
+  width: 70%;
+  height: 80vh;
+  overflow: visible;
+  background-color: #fff;
+  margin-left: 0;
+  transition: all 0.3s ease;
+}
+
+/* -------- Layout khi màn hình nhỏ hơn 760px -------- */
+@media (max-width: 760px) {
+  body {
+    justify-content: center; /* map căn giữa */
+  }
+
+  #map {
+    width: 90%;
+    height: 80vh;
+    margin: 0 auto;
+  }
+}
+
+/* -------- Legend -------- */
+.legend {
+  line-height: 18px;
+  color: #333;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  font-size: 13px;
+}
+.legend i {
+  width: 20px;
+  height: 15px;
+  float: left;
+  margin-right: 6px;
+  opacity: 0.8;
+  border: 1px solid #999;
+}
