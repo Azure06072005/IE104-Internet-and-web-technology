@@ -2,14 +2,83 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bản đồ Phân bố Liệt sỹ Việt Nam</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://d3js.org/d3.v5.min.js"></script>
   </head>
   <body>
-    <h1>Bản đồ Phân bố Liệt sỹ theo Tỉnh thành</h1>
-    <div id="map"></div>
+    <div class="header">
+      <h1>Những con số không biết nói dối</h1>
+    </div>
+
+    <div class="main-container">
+      <div class="stats-grid">
+        <div class="stats-image-container">
+          <img
+            src="./img/cu_nguyen_thi_thu.webp"
+            alt="Cụ Nguyễn Thị Thu - Mẹ Việt Nam Anh Hùng"
+            class="stats-header-image"
+          />
+          <div class="title">
+            Cả nước có 1.146.250 Liệt sỹ. Trong đó có 191.605 Liệt sỹ hi sinh
+            trong kháng chiến chống Pháp; 849.018 Liệt sỹ hi sinh trong kháng
+            chiến chống Mỹ,.....Tuổi trẻ hôm nay đời đời ghi nhớ, tri ân, biết
+            ơn sự hy sinh của các anh hùng liệt sỹ, các mẹ Việt Nam anh hùng,
+            các gia đình có người thân đã cống hiến sương máu, cuộc đời cho sự
+            nghiệp cách mạng vĩ đại của dân tộc
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-content">
+            <div class="number">1.146.250+</div>
+            <div class="label">Liệt sỹ đã hy sinh trên cả nước</div>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-content">
+            <div class="number">200.000+</div>
+            <div class="label">Liệt sỹ chưa tìm thấy được hài cốt</div>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-content">
+            <div class="number">300.000+</div>
+            <div class="label">Liệt sỹ vô danh</div>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-content">
+            <div class="number">127.000+</div>
+            <div class="label">Bà mẹ Việt Nam anh hùng</div>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-content">
+            <div class="number">2.000.000+</div>
+            <div class="label">Dân thường chết</div>
+          </div>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-content">
+            <div class="number">300.000+</div>
+            <div class="label">Người bị nhiễm chất độc màu da cam</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
   </body>
